@@ -6,7 +6,7 @@ const Filter = require('bad-words')
 const { generateMessage, generateLocationMessage } = require('./utils/messages')
 const { addUser, removeUser, getUser, getUsersInRoom } = require('./utils/users')
 
-const app = express()
+const app = express();
 const server = http.createServer(app) //it does change things express library does this behind the scenes.....
 const io = socketio(server)
 
